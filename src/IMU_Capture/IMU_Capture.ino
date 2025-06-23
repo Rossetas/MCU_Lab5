@@ -18,7 +18,9 @@
 
 #include <Arduino_LSM9DS1.h>
 
-const float accelerationThreshold = 2.5; // threshold of significant in G's
+//const float accelerationThreshold = 2.5; // threshold of significant in G's default
+//const float accelerationThreshold = 1.0; // modified - estacionario
+const float accelerationThreshold = 1.5; // modified - circulos - arriba_abajo - golpe
 const int numSamples = 119;
 
 int samplesRead = numSamples;
