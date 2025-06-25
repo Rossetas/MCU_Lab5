@@ -29,7 +29,8 @@
 
 #include "model.h"
 
-const float accelerationThreshold = 2.5; // threshold of significant in G's
+//const float accelerationThreshold = 2.5; // threshold of significant in G's
+const float accelerationThreshold = 1.5; // modified - circulos - arriba_abajo - golpe
 const int numSamples = 119;
 
 int samplesRead = numSamples;
@@ -54,8 +55,9 @@ byte tensorArena[tensorArenaSize] __attribute__((aligned(16)));
 
 // array to map gesture index to a name
 const char* GESTURES[] = {
-  "punch",
-  "flex"
+  "circulos",
+  "arriba_abajo",
+  "golpe",
 };
 
 #define NUM_GESTURES (sizeof(GESTURES) / sizeof(GESTURES[0]))
